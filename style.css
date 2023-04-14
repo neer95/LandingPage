@@ -1,0 +1,225 @@
+:root {
+    --dark-background: #1f2937;
+    --heading-size: 48px;
+    --heading-second: 18px;
+    --heading-second-color: #e5e7eb;
+    --header-logo-color: #f9faf8;
+    --header-logo-size: 24px;
+    --button-color: #3882f6;
+    --info-text-color: #1f2937;
+    --info-text-size: 36px;
+    --quote-background: #e5e7eb;
+    --quote-text: 36px;
+    --quote-text-color: #1f2937;
+    --hero-secondary-text: #e5e7eb;
+    --hero-secondary-font: 18px;
+    --hero-main: 48px;
+    --hero-color: #f9faf8;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.navmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-background);
+}
+
+.navbar {
+    /* border: 5px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 12px;
+}
+
+.navlinks ul {
+    display: flex;
+    gap: 16px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    color: white;
+    padding: 24px;
+    /* border: 1px solid red; */
+}
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+    width: 400px;
+}
+.logo{
+    font-size: 24px;
+}
+.hero-info p{
+    font-size: var(--hero-secondary-font); 
+    color: var(--hero-secondary-text); 
+}
+h1{
+    font-size: var(--hero-main);
+}
+
+.hero .button{
+    width: 100px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+.hero-image {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+}
+
+.navbar,
+.hero {
+    width: 1200px;
+}
+
+.hero-text {
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+.navigation {
+    background-color: var(--dark-background);
+}
+
+.hero {
+    background-color: var(--dark-background);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 40px;
+    /* border: 5px solid red; */
+}
+
+.container h2 {
+    margin-bottom: 16px;
+}
+
+.features-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    /* border: 1px solid red; */
+    margin-bottom: 80px;
+}
+
+.features-box div {
+    height: 150px;
+    width: 150px;
+    border: 3px solid var(--button-color);
+    border-radius: 12px;
+}
+
+.features-box p {
+    width: 150px;
+    text-align: center;
+}
+
+#features-heading {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    gap: 16px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: var(--quote-background);
+}
+
+.testimonial-box {
+    /* border: 1px solid black; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1200px;
+    /* align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+#quote {
+    font-size: var(--quote-text);
+    font-style: italic;
+}
+
+#author {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-around;
+    margin: 48px auto;
+    width: 1200px;
+    height: 120px;
+    gap: 48px;
+    align-items: center;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 12px;
+}
+
+#cta-button {
+    height: 24px;
+    width: 120px;
+    /* padding: 12px 24px; */
+    background:none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: var(--dark-background);
+    color: white;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
